@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae - Fátima Castellanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="cv-container">
+        <aside class="sidebar">
+            <img src="profile.jpg" alt="Fátima Castellanos">
+            <h2>Fátima Castellanos</h2>
+            <p>Estudiante de IDM</p>
+            <ul>
+                <li onclick="showSection('about')">About</li>
+                <li onclick="showSection('resume')">Resume</li>
+                <li onclick="showSection('works')">Works</li>
+                <li onclick="showSection('portfolio')">Portafolio</li>
+                <li onclick="showSection('contact')">Contact</li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div id="about" class="section active">
+                <h2>About Me</h2>
+                <p>Habilidades en modelado 3D, fotografía y sistemas operativos.</p>
+            </div>
+            <div id="resume" class="section">
+                <h2>Resume</h2>
+                <p>Información sobre experiencia y educación.</p>
+            </div>
+            <div id="works" class="section">
+                <h2>Works</h2>
+                <p>Proyectos y trabajos.</p>
+            </div>
+            <div id="portfolio" class="section">
+                <h2>Portafolio</h2>
+                <p>Haz clic en un proyecto para ver más detalles.</p>
+                <div class="portfolio-gallery">
+                    <a href="proyecto1.html"><img src="proyecto1_thumb.jpg" alt="Proyecto 1"></a>
+                    <a href="proyecto2.html"><img src="proyecto2_thumb.jpg" alt="Proyecto 2"></a>
+                    <a href="proyecto3.html"><img src="proyecto3_thumb.jpg" alt="Proyecto 3"></a>
+                    <a href="proyecto4.html"><img src="proyecto4_thumb.jpg" alt="Proyecto 4"></a>
+                    <a href="proyecto5.html"><img src="proyecto5_thumb.jpg" alt="Proyecto 5"></a>
+                </div>
+            </div>
+            <div id="contact" class="section">
+                <h2>Contact</h2>
+                <p>Información de contacto.</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
