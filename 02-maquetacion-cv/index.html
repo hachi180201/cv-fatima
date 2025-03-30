@@ -4,15 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fátima Castellanos</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            progress {
-            border: 0px;
-            width: 200px;
-            height: 25px;
-            background: #FFD700;
-    }
             background-color: #2e2e2e;
             color: #FFD700;
             font-family: 'Orbitron', sans-serif;
@@ -121,28 +114,68 @@
             color: #FFD700;
         }
         progress {
-            border: 0px;
+            border: 2px solid #FFD700;
             width: 200px;
             height: 25px;
-            background-color: #444; 
-            border-radius: 5px;
-            -webkit-appearance: none; 
-            -moz-appearance: none; 
+            background: linear-gradient(to right, #333, #444, #333);
+            background-size: 200% 100%;
+            animation: bg-move 10s linear infinite;
+            border-radius: 0px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
             appearance: none;
+            box-shadow: 0 0 10px #FFD700, inset 0 0 5px rgba(0, 0, 0, 0.5);
         }
         progress::-webkit-progress-value {
-            background-color: #FFD700; 
+            background: linear-gradient(to right, #FFD700, #FFD700, #00FFFF, #FFD700);
             border-radius: 0px;
+            animation: progress-glow 2s linear infinite;
+            margin-left:-2px;
         }
         progress::-moz-progress-bar {
-            background-color: #FFD700; 
+            background: linear-gradient(to right, #FFD700, #FFD700, #00FFFF, #FFD700);
             border-radius: 0px;
+            animation: progress-glow 2s linear infinite;
+            margin-left:-2px;
+        }
+        @keyframes progress-glow {
+            0% { background-position: 0% 0; }
+            100% { background-position: 200% 0; }
+        }
+        @keyframes bg-move {
+            0% { background-position: 0% 0; }
+            100% { background-position: 200% 0; }
+        }
+        /* Estilos específicos para la página del certificado */
+        .project-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #262626;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        .project-container img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: #0d0d0d;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background-color: #0d0d0d;
+            color: #FFD700;
         }
     </style>
 </head>
-<body>   
+<body>
     <div class="banner">
-        <!-- Apolo. -->
     </div>
 
     <div class="cv-container">
@@ -177,10 +210,10 @@
             <div class="section Certificados">
                 <h2>Certificados</h2>
                 <li>
-                    <a href="aspectosb.html" style="color:#FFD700" target="_blank">Aspectos básicos de la asistencia técnica</a>
+                    <a href="#aspectosb" style="color:#FFD700">Aspectos básicos de la asistencia técnica</a>
                 </li>
                 <li>
-                    <a href="https://www.linkkk.org/" style="color:#FFD700" target="_blank">Los bits y bytes de las redes informáticas</a>
+                    <a href="#bitsbytes" style="color:#FFD700">Los bits y bytes de las redes informáticas</a>
                 </li>
                 <li>
                     <a href="https://www.linkkk.org/" style="color:#FFD700" target="_blank">Sistemas operativos y tú: Convertirse en un usuario avanzado</a>
@@ -205,6 +238,18 @@
         <footer>
             <p>© 2025 Fátima Castellanos | Todos los derechos reservados</p>
         </footer>
+
+        <div id="aspectosb" class="project-container">
+            <a href="index.html" class="back-button">← Volver</a>
+            <h1>Aspectos básicos de la asistencia técnica</h1>
+            <img src="Aspectos básicos de la asistencia técnica.jpg" alt="Proyecto 1">
+        </div>
+
+        <div id="bitsbytes" class="project-container">
+            <a href="index.html" class="back-button">← Volver</a>
+            <h1>Los bits y bytes de las redes informáticas</h1>
+            <img src="Los bits y bytes de las redes informáticas_page-0001.jpg" alt="Los bits y bytes de las redes informáticas">
+        </div>
     </div>
 </body>
 </html>
