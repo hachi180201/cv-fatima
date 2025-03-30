@@ -30,8 +30,8 @@
             background-image: url('APOLO 3D.png');
             background-size: cover;
             background-position: center;
-            border-bottom: 4px solid #FFD700; 
-            margin-bottom: 30px; /*espacio debajo del banner */
+            border-bottom: 4px solid #FFD700;
+            margin-bottom: 30px;
         }
         .cv-container {
             width: 100%;
@@ -41,7 +41,7 @@
             background-color: #262626;
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
             border-radius: 10px;
-            margin-top: 30px; 
+            margin-top: 30px;
         }
         header {
             margin-bottom: 30px;
@@ -52,7 +52,7 @@
             border-radius: 50%;
             overflow: hidden;
             margin: 0 auto;
-            border: 4px solid #FFD700; 
+            border: 4px solid #FFD700;
             margin-bottom: 20px;
         }
         header .photo img {
@@ -62,7 +62,7 @@
         }
         header h1 {
             font-size: 36px;
-            color: #FFD700; 
+            color: #FFD700;
             margin-bottom: 10px;
         }
         header p {
@@ -120,10 +120,27 @@
             font-size: 14px;
             color: #FFD700;
         }
+        progress {
+            border: 0px;
+            width: 200px;
+            height: 25px;
+            background-color: #444; 
+            border-radius: 5px;
+            -webkit-appearance: none; 
+            -moz-appearance: none; 
+            appearance: none;
+        }
+        progress::-webkit-progress-value {
+            background-color: #FFD700; 
+            border-radius: 0px;
+        }
+        progress::-moz-progress-bar {
+            background-color: #FFD700; 
+            border-radius: 0px;
+        }
     </style>
 </head>
-<body>
-   
+<body>   
     <div class="banner">
         <!-- Apolo. -->
     </div>
@@ -155,29 +172,29 @@
                 <p>Escuela Preparatoria Diurna CAMPUS II (2018-2021)
                     <li>
                         <a href="https://www.linkkk.org/" style="color:#FFD700" target="_blank">Servicios de Orientación al Turista</a>
-                      </li>
+                    </li>
             </div>
             <div class="section Certificados">
                 <h2>Certificados</h2>
                 <li>
-                    <a href="https://www.linkkk.org/" style="color:#FFD700" target="_blank">Aspectos básicos de la asistencia técnica</a>
-                  </li>
-                  <li>
+                    <a href="aspectosb.html" style="color:#FFD700" target="_blank">Aspectos básicos de la asistencia técnica</a>
+                </li>
+                <li>
                     <a href="https://www.linkkk.org/" style="color:#FFD700" target="_blank">Los bits y bytes de las redes informáticas</a>
-                  </li>
-                  <li>
+                </li>
+                <li>
                     <a href="https://www.linkkk.org/" style="color:#FFD700" target="_blank">Sistemas operativos y tú: Convertirse en un usuario avanzado</a>
-                  </li>
-                  <li>
+                </li>
+                <li>
                     <a href="https://www.linkkk.org/" style="color:#FFD700" target="_blank">Administración de sistemas y servicios de infraestructura de TI</a>
-                  </li>
-                  <li>
+                </li>
+                <li>
                     <a href="https://www.linkkk.org/" style="color:#FFD700" target="_blank">Seguridad informática: defensa contra las artes oscuras digitales</a>
-                  </li>
+                </li>
             </div>
             <div class="section languages">
                 <h2>Idiomas</h2>
-                <label for="file">Inglés:</label> 
+                <label for="file">Inglés:</label>
                 <progress id="file" max="100" value="60">60%</progress>
             </div>
         </section>
